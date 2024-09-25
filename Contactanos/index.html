@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactanos</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../icon.jpeg" width=100px height=100px alt="Logo">
+        </div>
+        <div class="nombre">
+            <h1>GameModsStudio</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../Nosotros">Sobre nosotros</a></li>
+                <li><a href="../Proyectos">Proyectos</a></li>
+                <li><a href="./Glosario">Glosario</a></li>
+                <li><a
+                    href="https://docs.google.com/spreadsheets/d/1vvKyNCWT2t7XFTIjF_fPOoVbo7sJ6AFpBa0uCWvWiWw/edit?usp=sharing">Hojas de cálculo</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="contenido">
+        <h1>Contactanos</h1>
+        <p>Puedes contactarnos a través del formulario de abajo o enviándonos un correo electrónico a <a href="mailto:info@nuestraempresa.com">info@nuestraempresa.com</a>.</p>
+        <form id="formulario">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre"><br><br>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje"></textarea><br><br>
+            <input type="submit" value="Enviar">
+        </form>
+        <div id="respuesta"></div>
+    </div>
+    <center>
+    <footer>
+        <p>&copy; 2024 Nuestra empresa. Todos los derechos reservados.</p>
+    </footer>
+        </center>
+    <script>const formulario = document.getElementById('formulario');
+    const respuesta = document.getElementById('respuesta');
+
+    formulario.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const nombre = document.getElementById('nombre').value;
+        const email = document.getElementById('email').value;
+        const mensaje = document.getElementById('mensaje').value;
+
+        // Aquí puedes agregar la lógica para enviar el formulario a través de un servidor o API
+        // Por ahora, solo mostraremos un mensaje de éxito
+        respuesta.innerHTML = `Gracias por contactarnos, ${nombre}!`;
+    });</script>
+</body>
+</html>
