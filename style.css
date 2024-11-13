@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 body {
-  font-family: 'Montserrat', sans-serif; /* Fuente Montserrat */
+  font-family: 'Montserrat', sans-serif;
+  /* Fuente Montserrat */
   margin: 0;
   padding: 0;
-  background-image: linear-gradient(to bottom, #1a1d23, #2f4f7f); /* Degradado negro y celeste */
-  background-image: -webkit-linear-gradient(to bottom, #1a1d23, #2f4f7f); /* Soporte para Safari y Chrome */
-  cursor: url("gun.cur"), auto;
+  background-image: linear-gradient(to bottom, #1a1d23, #2f4f7f);
+  /* Degradado negro y celeste */
+  background-image: -webkit-linear-gradient(to bottom, #1a1d23, #2f4f7f);
+  /* Soporte para Safari y Chrome */
+  cursor: url("Lulu.cur"), auto;
 }
 
 h1 {
@@ -17,7 +20,8 @@ h1 {
 }
 
 header {
-  background-color: #000; /* Fondo negro */
+  background-color: #000;
+  /* Fondo negro */
   color: #fff;
   padding: 20px;
   display: flex;
@@ -31,8 +35,10 @@ header {
 
 .nombre {
   margin-right: 40px;
-  font-size: 24px; /* Tamaño de fuente del nombre */
-  font-weight: bold; /* Negrita para el nombre */
+  font-size: 24px;
+  /* Tamaño de fuente del nombre */
+  font-weight: bold;
+  /* Negrita para el nombre */
 }
 
 .nombre h1 {
@@ -48,7 +54,8 @@ header nav ul {
 }
 
 header nav ul li {
-  margin-right: 40px; /* Aumento el margen derecho para separar los botones */
+  margin-right: 40px;
+  /* Aumento el margen derecho para separar los botones */
 }
 
 header nav a {
