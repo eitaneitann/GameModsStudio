@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+header .logo img {
+    border-radius: 50%; /* Hace que el logo sea redondo */
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.contenido {
+    text-align: center;
+    padding: 20px;
+}
+
+.proyectos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que los proyectos se ajusten en varias filas */
+    gap: 20px; /* Espacio entre los proyectos */
+}
+
+.proyecto {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Para que el borde redondeado funcione */
+    width: 300px; /* Ancho fijo para los proyectos */
+    transition: transform 0.3s; /* Transición suave al hacer hover */
+}
+
+.proyecto img {
+    width: 100%; /* Hace que la imagen ocupe todo el ancho del contenedor */
+    height: 200px; /* Altura fija para todas las imágenes */
+    object-fit: cover; /* Mantiene la proporción de la imagen y recorta si es necesario */
+}
+
+.proyecto h3 {
+    margin: 10px 0;
+}
+
+.proyecto p {
+    padding: 0 10px 10px; /* Espaciado interno para el texto */
+}
+
+.proyecto:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}

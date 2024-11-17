@@ -11,7 +11,42 @@ body {
   /* Soporte para Safari y Chrome */
   cursor: url("Lulu.cur"), auto;
 }
+.redes-sociales {
+  text-align: center;
+  margin: 20px 0;
+}
 
+.social-icon {
+  margin: 0 15px;
+  font-size: 24px; /* Ajusta el tamaño según sea necesario */
+  color: #333; /* Color por defecto */
+  text-decoration: none;
+  transition: color 0.3s; /* Transición suave para el cambio de color */
+}
+
+/* Hover para Twitter */
+.social-icon.twitter:hover {
+  color: black; /* Color negro en hover */
+}
+
+.social-icon.twitter:hover:before {
+  font-size: 24px; /* Ajusta el tamaño de la X */
+}
+
+/* Hover para Instagram */
+.social-icon.instagram:hover {
+  color: magenta; /* Color magenta en hover */
+}
+
+/* Hover para Facebook */
+.social-icon.facebook:hover {
+  color: blue; /* Color azul en hover */
+}
+
+/* Hover para YouTube */
+.social-icon.youtube:hover {
+  color: red; /* Color rojo en hover */
+}
 h1 {
   font-family: "Press Start 2P", system-ui;
   font-weight: 400;
@@ -20,13 +55,31 @@ h1 {
 }
 
 header {
-  background-color: #000;
-  /* Fondo negro */
-  color: #fff;
-  padding: 20px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+}
+
+header .logo img {
+  border-radius: 50%; /* Hace que el logo sea redondo */
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+header nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
 }
 
 .logo {
@@ -45,18 +98,6 @@ header {
   margin: 0;
 }
 
-header nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
-}
-
-header nav ul li {
-  margin-right: 40px;
-  /* Aumento el margen derecho para separar los botones */
-}
 
 header nav a {
   color: #fff;

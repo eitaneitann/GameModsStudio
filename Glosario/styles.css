@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+   font-family: 'Montserrat', sans-serif;
+   margin: 0;
+   padding: 0;
+   background-image: linear-gradient(to bottom, #1a1d23, #2f4f7f);
+   cursor: url("Lulu.cur"), auto;
+}
+
+header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   background-color: #333;
+   color: white;
+   padding: 10px 20px;
+}
+
+header .logo img {
+   border-radius: 50%;
+}
+
+header nav ul {
+   list-style: none;
+   padding: 0;
+}
+
+header nav ul li {
+   display: inline;
+   margin: 0 15px;
+}
+
+header nav ul li a {
+   color: white;
+   text-decoration: none;
+   transition: color 0.2s ease;
+}
+
+header nav ul li a:hover {
+   color: #ccc;
+   text-shadow: 0 0 10px #fff;
+}
+
+.contenido {
+   max-width: 800px;
+   margin: 40px auto;
+   padding: 20px;
+   background-color: #fff;
+   border: 1px solid #ddd;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contenido h1 {
+   color: #333;
+   text-align: center;
+   margin-bottom: 20px;
+}
+
+.contenido h2 {
+   color: #555;
+   text-align: center;
+   margin-bottom: 20px;
+}
+
+.glosario {
+   list-style-type: decimal; /* Estilo de lista numerada */
+   padding-left: 20px; /* Espaciado a la izquierda */
+}
+
+.glosario li {
+   margin-bottom: 15px; /* Espacio entre términos */
+   line-height: 1.6; /* Espaciado entre líneas */
+}
+
+.glosario li strong {
+   color: #1a1d23; /* Color para los términos */
+}
+
+footer {
+   text-align: center;
+   padding: 20px;
+   background-color: #333;
+   color: white;
+   position: relative;
+   bottom: 0;
+   width: 100%;
+}
+
+footer p {
+   margin: 0;
+}
