@@ -90,3 +90,35 @@ footer {
 footer p {
    margin: 0;
 }
+/* Media Queries para dispositivos móviles */
+@media (max-width: 768px) {
+   header {
+       flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+       align-items: center; /* Centrar elementos */
+   }
+
+   header nav ul {
+       display: flex;
+       flex-direction: column; /* Cambiar a columna para el menú */
+       align-items: center; /* Centrar elementos del menú */
+   }
+
+   header nav ul li {
+       margin: 5px 0; /* Espaciado vertical entre elementos del menú */
+   }
+
+   .contenido {
+       margin: 20px; /* Reducir margen en pantallas pequeñas */
+       padding: 10px; /* Reducir padding en pantallas pequeñas */
+   }
+
+   iframe {
+       height: 400px; /* Ajustar altura de los iframes en pantallas pequeñas */
+   }
+}
+
+@media (max-width: 480px) {
+   iframe {
+       height: 300px; /* Ajustar aún más la altura de los iframes en pantallas muy pequeñas */
+   }
+}
