@@ -7,7 +7,12 @@ body {
     background-image: linear-gradient(to bottom, #1a1d23, #2f4f7f);
     cursor: url("Lulu.cur"), auto;
 }
-
+h1 {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+  }
 header {
     display: flex;
     align-items: center;
@@ -121,29 +126,55 @@ footer p {
         flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
         align-items: center; /* Centrar elementos */
     }
-
+  
     header nav ul {
         display: flex;
         flex-direction: column; /* Cambiar a columna para el menú */
         align-items: center; /* Centrar elementos del menú */
     }
-
+  
     header nav ul li {
         margin: 5px 0; /* Espaciado vertical entre elementos del menú */
     }
-
+  
     .contenido {
         margin: 20px; /* Reducir margen en pantallas pequeñas */
         padding: 10px; /* Reducir padding en pantallas pequeñas */
     }
-
+  
+    h1 {
+        font-size: 24px; /* Reducir tamaño de fuente en pantallas pequeñas */
+    }
+  
+    .nombre {
+        font-size: 20px; /* Reducir tamaño de fuente del nombre en pantallas pequeñas */
+    }
+  
+    .botones {
+        flex-direction: column; /* Cambiar a columna para los botones */
+        align-items: center; /* Centrar botones */
+    }
+  
+    .botones a {
+        width: 100%; /* Botones de ancho completo */
+        margin: 5px 0; /* Espaciado vertical entre botones */
+    }
+  
     iframe {
         height: 400px; /* Ajustar altura de los iframes en pantallas pequeñas */
     }
-}
-
-@media (max-width: 480px) {
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+        font-size: 20px; /* Ajustar aún más el tamaño de fuente en pantallas muy pequeñas */
+    }
+  
+    .nombre {
+        font-size: 18px; /* Ajustar tamaño de fuente del nombre en pantallas muy pequeñas */
+    }
+  
     iframe {
         height: 300px; /* Ajustar aún más la altura de los iframes en pantallas muy pequeñas */
     }
-}
+  }
