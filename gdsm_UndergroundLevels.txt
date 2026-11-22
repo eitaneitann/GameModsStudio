@@ -1,0 +1,2 @@
+# GDSM - IDs online de los niveles del Underground (nivel 1 primero). 0 = todavia sin nivel.
+0, 0, 0, 0
