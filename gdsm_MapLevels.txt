@@ -1,5 +1,5 @@
 # GDSM - IDs online de los niveles del mapa (nivel 1 primero). 0 = todavia sin nivel.
-287, 304, 305, 306, 0    # 1-5   nieve
+0, 0, 0, 0, 0    # 1-5   nieve
 0, 0, 0, 0, 0          # 6-10  bosque
 0, 0, 0, 0, 0          # 11-15 pantano
 0, 0, 0, 0, 0          # 16-20 desierto
